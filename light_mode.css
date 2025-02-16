@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body, .stApp {
+    background-color: #ffffff; /* Change background to white */
+    font-family: 'Poppins', sans-serif;
+    color: #333;  /* Ensure text is visible */
+}
+
+.stButton>button {
+    background-color: whitesmoke;
+    color: rgb(15, 13, 13);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.stButton>button:hover {
+    background-color: #cf6262;
+    color: whitesmoke !important;
+    box-shadow: unset !important;
+}
+
+.stSidebar {
+    background-color: #343a40;
+    color: white;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.stTitle, .stHeader, .stSubheader {
+    font-family: 'Poppins', sans-serif;
+    color: #333;  /* Darker color for better visibility */
+}
+
+.stSidebar label, .stSidebar .stSidebarItem {
+    color: #ffffff; /* Ensure text in sidebar is white */
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;  /* Ensure text inside container is visible */
+}
+.stForm {
+    background-color: #e4e4e4 !important; /* Gray color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    color: #e0e0e0;
+}
+
+.stFormSubmitButton button {
+    background-color: whitesmoke !important; /* Light button background */
+    color: #000000 !important; /* Dark text for visibility */
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Ensure Streamlit's default hover is restored */
+.stFormSubmitButton button:hover {
+    background-color: #cf6262 !important; /* Reset background to default */
+    color: unset !important; /* Reset color to default */
+    box-shadow: unset !important; /* Reset shadow to default */
+}

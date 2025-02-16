@@ -1,0 +1,115 @@
+/* General body styling for dark mode */
+body, .stApp {
+    background-color: #1c1d1f;
+    font-family: 'Poppins', sans-serif;
+    color: #e0e0e0;
+}
+
+/* Styling buttons globally */
+.stButton > button {
+    background-color: #534f4f;
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.stButton button:hover {
+    background-color: #761d1d !important; /* Reset background to default */
+    color: unset !important; /* Reset color to default */
+    box-shadow: unset !important; /* Reset shadow to default */
+}
+
+/* Styling the sidebar */
+.stSidebar, .stSidebarContainer {
+    background-color: #242426;
+    color: whitesmoke;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling headings */
+.stTitle, .stHeader, .stSubheader {
+    font-family: 'Poppins', sans-serif;
+    color: #60a5fa;
+}
+
+/* Specific adjustments for labels and text inputs */
+.stSidebarItem, .stSidebar label, .stTextInput label {
+    color: #a7a7a7 !important;
+}
+
+.stTextInput input, .stPasswordInput input {
+    background-color: #2c2f33;
+    color: #e0e0e0 !important;
+    border: 1px solid #444;
+}
+
+/* Styling the radio buttons */
+div[data-testid="stRadio"] label {
+    color: #f5f5f5 !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+div[data-testid="stRadio"] div[data-testid="stMarkdownContainer"] p {
+    color: #afafaf !important;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Styling the form submit button */
+.stFormSubmitButton button {
+    background-color: #534f4f !important; /* Light button background */
+    color: whitesmoke !important; /* Dark text for visibility */
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Ensure Streamlit's default hover is restored */
+.stFormSubmitButton button:hover {
+    background-color: #761d1d !important; /* Reset background to default */
+    color: unset !important; /* Reset color to default */
+    box-shadow: unset !important; /* Reset shadow to default */
+}
+
+
+/* Styling the form container */
+.container {
+    background-color: #444; /* Set the background color to a gray shade */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #e0e0e0;
+}
+/* Styling the form container */
+.stForm {
+    background-color: #222222 !important; /* Gray color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    color: #e0e0e0;
+}
+
+/* Styling all conversation history text */
+.stText .st-emotion-cache-1b3332t {
+    color: #f5f5f5 !important; /* Smokewhite color */
+}
+
+/* Styling for autofilled input fields */
+input:-webkit-autofill {
+    background-color: #2c2f33 !important; /* Match the input field's background color */
+    color: #e0e0e0 !important; /* Ensure text color is correct */
+    transition: background-color 5000s ease-in-out 0s; /* Prevent autofill background change */
+}
