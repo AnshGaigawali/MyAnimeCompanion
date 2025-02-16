@@ -6,3 +6,4 @@ logging
 gunicorn
 uvicorn
 Flask
+scipy
