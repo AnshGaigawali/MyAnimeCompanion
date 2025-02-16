@@ -22,7 +22,7 @@ def apply_css(file_name):
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-FLASK_API_URL = "https://your-backend-url.onrender.com"
+FLASK_API_URL = "https://myanimecompanion.onrender.com"
 DB_CONNECTION_STRING = "mongodb+srv://anshgaigawali:anshtini@cluster2.l7iru.mongodb.net/animechatbot?retryWrites=true&w=majority&appName=Cluster2"
 client = MongoClient(DB_CONNECTION_STRING)
 db = client['animechatbot']
