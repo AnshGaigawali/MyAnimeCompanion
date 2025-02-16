@@ -151,7 +151,7 @@ def main():
     theme_mode = st.sidebar.selectbox("Select Theme Mode:", ["Light Mode", "Dark Mode"])
     
     if theme_mode == "Dark Mode":
-        apply_css("dark_mode.css")
+        apply_css("dark_mode1.css")
     else:
         apply_css("light_mode.css")
 
