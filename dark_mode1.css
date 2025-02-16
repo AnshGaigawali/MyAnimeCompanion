@@ -114,14 +114,18 @@ input:-webkit-autofill {
     transition: background-color 5000s ease-in-out 0s; /* Prevent autofill background change */
 }
 
-/* Ensure conversation history text is visible */
+/* Force text color inside conversation history */
 .stText .st-emotion-cache-1b3332t,
-.stText div[data-testid="stMarkdownContainer"] p {
-    color: #e0e0e0 !important; /* Force apply light color */
+.stText div[data-testid="stMarkdownContainer"] p,
+.st-emotion-cache-1b3332t,
+div[data-testid="stMarkdownContainer"] p {
+    color: #e0e0e0 !important; 
+    background-color: transparent !important;
 }
 
-/* Debugging: Apply border to see if styles are applied */
-.stText div {
-    border: 1px solid red !important;
+/* Debugging: Force color on all text inside Streamlit */
+* {
+    color: #e0e0e0 !important;
 }
+
 
