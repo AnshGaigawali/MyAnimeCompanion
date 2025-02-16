@@ -1,0 +1,2 @@
+[theme]
+base="light"  # Disables Streamlit’s built-in dark mode
