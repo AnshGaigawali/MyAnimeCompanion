@@ -5,3 +5,4 @@ bcrypt
 logging
 gunicorn
 uvicorn
+Flask
