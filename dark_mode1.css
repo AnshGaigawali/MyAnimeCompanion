@@ -114,16 +114,26 @@ input:-webkit-autofill {
     transition: background-color 5000s ease-in-out 0s; /* Prevent autofill background change */
 }
 
-/* Only change the conversation history text */
-div[data-testid="stMarkdownContainer"] p,
-.stText .st-emotion-cache-1b3332t {
-    color: #e0e0e0 !important; /* Make only conversation history text visible */
+/* Force light color on conversation history text */
+.st-emotion-cache-2qp9ou {
+    color: #e0e0e0 !important;  /* Ensure light color */
 }
 
-/* Exclude other text elements from being overridden */
-div[data-testid="stMarkdownContainer"]:not(.stText) p {
-    color: unset !important; /* Reset color for other text */
+/* Ensure bold text inside remains visible */
+.st-emotion-cache-2qp9ou strong {
+    color: #f5f5f5 !important;
 }
+
+/* Ensure links inside the response are visible */
+.st-emotion-cache-2qp9ou a {
+    color: #60a5fa !important;
+    text-decoration: none;
+}
+
+.st-emotion-cache-2qp9ou a:hover {
+    text-decoration: underline;
+}
+
 
 
 
