@@ -114,9 +114,14 @@ input:-webkit-autofill {
     transition: background-color 5000s ease-in-out 0s; /* Prevent autofill background change */
 }
 
-/* Ensuring conversation history text is visible */
+/* Ensure conversation history text is visible */
 .stText .st-emotion-cache-1b3332t,
 .stText div[data-testid="stMarkdownContainer"] p {
-    color: #e0e0e0 !important; /* Force apply text color */
+    color: #e0e0e0 !important; /* Force apply light color */
+}
+
+/* Debugging: Apply border to see if styles are applied */
+.stText div {
+    border: 1px solid red !important;
 }
 
