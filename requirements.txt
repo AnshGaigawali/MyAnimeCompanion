@@ -3,3 +3,5 @@ pymongo
 requests
 bcrypt
 logging
+gunicorn
+uvicorn
