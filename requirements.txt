@@ -7,4 +7,4 @@ gunicorn
 uvicorn
 Flask
 scipy
-sklearn
+scikit-learn
